@@ -1,6 +1,7 @@
 # sshpass.sh
-shell script helper for provide password for ssh via command line
-automation the very 1st time of linux server setup(maybe just save pub key to .ssh/authorized_keys).
+sshpass.sh is a bash shell script for ssh to accept command line password.  
+
+the goal is to enable the automation for the very 1st time of linux server setup(maybe just save pub key to .ssh/authorized_keys).
 
 sshpass.sh project home page - https://github.com/zixia/sshpass.sh
 
@@ -21,4 +22,4 @@ This is why I need sshpass, and I want a simplest way to do this.
 - Thanks: https://www.exratione.com/2014/08/bash-script-ssh-automation-without-a-password-prompt/
 
 ## Todo
-- find a way out to run inside OpenWRT!
+- find a way out to run inside OpenWRT! ( that is what I REALLY want! )
