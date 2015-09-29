@@ -12,6 +12,13 @@ But, how about the very 1st time we setup the server? the worse, how about lots 
 
 This is why I need sshpass, and I want a simplest way to do this.
 
+## Usage
+
+```bash
+echo "password123456" | ./sshpass.sh ssh buntu@localhost 'whoami'
+ubuntu
+```
+
 ## Related projects
 - sshpass http://sourceforge.net/projects/sshpass/ - writen by C
 - fd0ss http://inai.de/projects/hxtools/ - writen by C
