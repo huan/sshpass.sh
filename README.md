@@ -34,5 +34,13 @@ ubuntu
 - Thanks: https://www.exratione.com/2014/08/bash-script-ssh-automation-without-a-password-prompt/
  > The technique shown here for using SSH in a script with password authentication but without a password prompt has been tested on recent versions of Ubuntu and CentOS, so should work for most Linux distributions. It uses a combination of (a) setsid to run ssh in a new session and (b) setting the SSH_ASKPASS environment variable. If SSH_ASKPASS is set to the path of a Bash script, OpenSSH will run the script and take the result as the password without a prompt - but only under somewhat contrived circumstances.
 
+- Credit: http://www.cyberciti.biz/faq/linux-unix-tcp-port-forwarding/  
+ > Connect To Remote SSH Server  
+ > You can connect to the remote ssh server called server1 and use pty for communication between socat and ssh, makes it ssh's controlling tty (ctty), and makes this pty the owner of a new process group (setsid), so ssh accepts the password from socat.
+
+```shell
+$ (sleep 5; echo YOURSSHPASSWORDHERE; sleep 5; echo date; sleep 1) |socat - EXEC:'ssh -l userName server1.nixcraft.net.in',pty,setsid,ctty
+```
+
 ## Todo
 - find a way out to run inside OpenWRT! ( that is what I REALLY want! )
