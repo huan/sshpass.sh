@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# sshpass.sh - use command line password with ssh
+# https://github.com/zixia/sshpass.sh
 #
 # 1st time login to your linux server?
 # without the authorized_keys set, we have to input password.
