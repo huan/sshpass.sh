@@ -3,7 +3,7 @@ sshpass.sh is a bash shell script for ssh to accept command line password.
 
 the goal is to enable the automation for the very 1st time of linux server setup(maybe just save pub key to .ssh/authorized_keys).
 
-sshpass.sh project home page - https://github.com/zixia/sshpass.sh
+sshpass.sh project home page - https://github.com/huan/sshpass.sh
 
 ## Background
 Yes, everyone knows we should use the private/public key pairs when we manage linux server.
